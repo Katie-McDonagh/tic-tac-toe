@@ -30,5 +30,8 @@ preset-react and preset-env are both presets that transform specific flavors of 
 
 ####webpack
 A highly modifiable tool that bundles JS files. Webpack uses loaders to process different types of files for bundling. It also works easily alongside a development server and can for example be configured to reload browser pages on saved changes to React components.
+
+webpack.config.js: this file exports an object with webpack’s configuration. This has a lot of explicit configuration. See the file for more detailed comments
+
 [further reading](https://survivejs.com/webpack/what-is-webpack/)
 
