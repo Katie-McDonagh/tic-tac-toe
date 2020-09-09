@@ -25,4 +25,5 @@ babel-core is the main babel package — We need this for babel to do any transf
 
 babel-cli allows you to compile files from the command line
 
+.babel.rc file:
 preset-react and preset-env are both presets that transform specific flavors of code — in this case, the env preset allows us to transform ES6+ into more traditional javascript and the react preset does the same, but with JSX instead
