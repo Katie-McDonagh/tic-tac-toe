@@ -58,3 +58,17 @@ This is the CSS file corresponding to App Component, main CSS for the app
 
 ####jest
 Jest is a test runner, provides the conventional methods describe() and it() or test(), and can be used for any JS project. We'll use it and configure it to work as needed.
+
+####lifecyclescripts
+scripts are the property of the package.json file, they are scripts that can be run before, during or after development:
+
+prepack is the lifecycle script called before each call to yarn pack. This is typically the place where you'll want to put scripts that build a package - such as transpiling its source.
+
+postpack is called right after yarn pack, whether the call succeeded or not. This is typically the place where you'll clean your working directory from the build artifacts (note that whether to actually clean them or not is purely optional).
+
+prepublish is called before yarn npm publish and similar commands (even before the package has been packed). This is the place where you'll want to check that the project is in an ok state. Because it's only called on prepublish, the prepublish hook shouldn't have side effects. In particular don't transpile the package sources in prepublish, as people consuming directly your repository wouldn't be able to use your project.
+
+postinstall is called after a package got successfully installed on the disk. It is guaranteed.
+
+Note that yarn don't support every single lifecycle script originally present in npm. This is a deliberate decision based on the observation that too many lifecycle scripts make it difficult to know which one to use in which circumstances, leading to confusion and mistakes. We are open to add the missing ones on a case-by-case basis if compelling use cases are provided.
+
