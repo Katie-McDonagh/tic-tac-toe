@@ -27,3 +27,8 @@ babel-cli allows you to compile files from the command line
 
 .babel.rc file:
 preset-react and preset-env are both presets that transform specific flavors of code — in this case, the env preset allows us to transform ES6+ into more traditional javascript and the react preset does the same, but with JSX instead
+
+####webpack
+A highly modifiable tool that bundles JS files. Webpack uses loaders to process different types of files for bundling. It also works easily alongside a development server and can for example be configured to reload browser pages on saved changes to React components.
+[further reading](https://survivejs.com/webpack/what-is-webpack/)
+
