@@ -55,3 +55,6 @@ This is the file for App Component. App Component is the main component in React
 
 src/App.css
 This is the CSS file corresponding to App Component, main CSS for the app
+
+####jest
+Jest is a test runner, provides the conventional methods describe() and it() or test(), and can be used for any JS project. We'll use it and configure it to work as needed.
