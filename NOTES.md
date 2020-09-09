@@ -49,3 +49,6 @@ As you notice it renders our React application with the render method. Also ther
 import App from './App';
 ````
 The extension .js (App.js) is omitted because it is automatically addressed by our build workflow.
+
+src/App.js
+This is the file for App Component. App Component is the main component in React which acts as a container for all other components.
