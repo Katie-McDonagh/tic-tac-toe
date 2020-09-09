@@ -38,3 +38,14 @@ webpack.config.js: this file exports an object with webpack’s configuration. T
 ####hotmodulereplacement
 a plug in to allow for automatic refresh of the page (we don't have to reload the server to see all our changes)
 
+####React
+src/index.js:
+This file access the root element in our DOM , the element with id root in our HTML file.
+```
+ReactDOM.render(<App />, document.getElementById('root'));
+````
+As you notice it renders our React application with the render method. Also there is a reference of App object that we imported from the App file.
+```
+import App from './App';
+````
+The extension .js (App.js) is omitted because it is automatically addressed by our build workflow.
