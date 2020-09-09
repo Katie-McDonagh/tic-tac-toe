@@ -52,3 +52,6 @@ The extension .js (App.js) is omitted because it is automatically addressed by o
 
 src/App.js
 This is the file for App Component. App Component is the main component in React which acts as a container for all other components.
+
+src/App.css
+This is the CSS file corresponding to App Component, main CSS for the app
