@@ -35,3 +35,6 @@ webpack.config.js: this file exports an object with webpack’s configuration. T
 
 [further reading](https://survivejs.com/webpack/what-is-webpack/)
 
+####hotmodulereplacement
+a plug in to allow for automatic refresh of the page (we don't have to reload the server to see all our changes)
+
