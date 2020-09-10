@@ -72,7 +72,10 @@ postinstall is called after a package got successfully installed on the disk. It
 
 Note that yarn don't support every single lifecycle script originally present in npm. This is a deliberate decision based on the observation that too many lifecycle scripts make it difficult to know which one to use in which circumstances, leading to confusion and mistakes. We are open to add the missing ones on a case-by-case basis if compelling use cases are provided.
 
-####arrow function
+####react testing library
+a library we can use to test our react componants:
+The simplest way to think about testing components in react is that we have to create an element, attach our react-dom tree to the element to then traverse it and make our assertions. A lot of this setup is abstracted away: eg in react-testing-library's render method and query methods.
+
 
 
 
