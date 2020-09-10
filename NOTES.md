@@ -73,8 +73,13 @@ postinstall is called after a package got successfully installed on the disk. It
 Note that yarn don't support every single lifecycle script originally present in npm. This is a deliberate decision based on the observation that too many lifecycle scripts make it difficult to know which one to use in which circumstances, leading to confusion and mistakes. We are open to add the missing ones on a case-by-case basis if compelling use cases are provided.
 
 ####react testing library
-a library we can use to test our react componants:
+a library we can use to test our react components:
 The simplest way to think about testing components in react is that we have to create an element, attach our react-dom tree to the element to then traverse it and make our assertions. A lot of this setup is abstracted away: eg in react-testing-library's render method and query methods.
+
+####virtual DOM
+the VDOM is a programming concept where an ideal, or virtual representation of a UI is kept in memory and synced with the real DOM by a library such as React DOM. This process is called reconciliation.
+
+This approach enables the declarative API of React: You tell React what state you want the UI to be in, and it makes sure the DOM matches that state. This abstracts out the attribute manipulation, event handling, and manual DOM updating that you would otherwise have to use to build your app.
 
 
 
