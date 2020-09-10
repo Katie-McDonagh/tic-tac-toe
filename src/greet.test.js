@@ -1,5 +1,5 @@
-import greet from './greet'
+const greet = require('./greet.js');
 
 test('it returns a greeting and name of the person being greeted', () => {
-  expect(greet('Katie')).toEqual('Hi Katie!');
+  expect(greet('Katie')).toBe('Hi, Katie!');
 });
